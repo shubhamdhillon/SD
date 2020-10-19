@@ -3,9 +3,11 @@ This is a Class program in C++ language
 
 // C++ program 
 
-#include <iostream.h>
+#include <iostream>
 #include <string.h>
+#include <algorithm>
 using namespace std;
+
 class MyClass {       
   public:             
     int myNum;        
@@ -14,11 +16,11 @@ class MyClass {
   
 int main() {
   MyClass myObj; 
-
-  myObj.myNum = 17; 
-  myObj.myString = "Shubham's birthday is on 17th October";
+  int date;
+  cin>>date;
+  myObj.myNum =date; 
   cout << myObj.myNum << "\n";
-  cout << myObj.myString;
+  cout <<"Shubham's birthday is on"<< myObj.myNum<<"October";
   return 0;
 }
 
